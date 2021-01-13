@@ -30,7 +30,7 @@ function view_quick_look() {
                 restar()
                 close_quicks()
                 r.classList.add("active")
-                r.insertAdjacentHTML('afterend', `<tr>
+                r.insertAdjacentHTML('afterend', `<tr class="tr_policy animated--fade-in">
                 <td colspan="10" class="bg-light quicklook">
                     <div class="row p-2">
                         <div class="col-4" style="padding-left: 70px;">
@@ -73,6 +73,7 @@ function view_quick_look() {
 }
 
 function close_quicks() {
+
     const quicks = document.querySelectorAll(".quicklook")
 
     if (quicks) {
@@ -83,10 +84,11 @@ function close_quicks() {
     }
 }
 
-function restar(){
+function restar() {
     let rows = document.querySelectorAll(".tr_policy")
 
     rows.forEach(r => {
+        //r.setAttribute("class", "tr_policy animated--fade-in-up")
         r.classList.remove("active")
     })
 }
