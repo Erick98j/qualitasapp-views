@@ -91,6 +91,10 @@ html {
   cursor: pointer;
 }
 
+.activeQuick {
+  background-color: #f7f9fa;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }

@@ -22,14 +22,14 @@ function view_quick_look() {
 
     rows.forEach(r => {
         r.addEventListener("click", () => {
-            if (r.classList.contains("active")) {
-                r.classList.remove("active")
+            if (r.classList.contains("activeQuick")) {
+                r.classList.remove("activeQuick")
                 close_quicks()
                 restar();
             } else {
                 restar()
                 close_quicks()
-                r.classList.add("active")
+                r.classList.add("activeQuick")
                 r.insertAdjacentHTML('afterend', `<tr class="tr_policy animated--fade-in">
                 <td colspan="10" class="bg-light quicklook">
                     <div class="row p-2">
@@ -61,7 +61,7 @@ function view_quick_look() {
                                 <li><p><strong>Vencimiento:</strong> 11/01/2021</p></li>
                                 <li><p><strong>Instrucciones de pago:</strong> <a href="#">https://qualitas.com/asdasdasd/saasdasd</a></p></li>
                             </ul>
-                            <button class="btn btn-sm btn-success">Enviar whatsapp de cobranza</button>
+                            <a class="btn btn-sm btn-success" target="_blank" href="https://api.whatsapp.com/send?phone=+525534260681&text=Paga+tu+p%C3%B3liza+prro">Enviar whatsapp de cobranza</a>
                         </div>
                     </div>
                 </td>
@@ -89,7 +89,7 @@ function restar() {
 
     rows.forEach(r => {
         //r.setAttribute("class", "tr_policy animated--fade-in-up")
-        r.classList.remove("active")
+        r.classList.remove("activeQuick")
     })
 }
 
