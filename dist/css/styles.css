@@ -83,6 +83,14 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.color-bg-gray {
+  background-color: rgb(230, 228, 228);
+}
+
+.tr_policy {
+  cursor: pointer;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }

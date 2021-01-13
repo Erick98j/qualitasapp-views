@@ -1,15 +1,15 @@
 // Call the dataTables jQuery plugin
-$(document).ready(function() {
+$(document).ready(function () {
     $('#dataTable').DataTable();
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     $('#dataTableActivity').DataTable({
         "language": {
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
         },
-        "order": [[ 0, 'desc' ]],
+        "order": [[0, 'desc']],
         "lengthMenu": [[10, 25, 50, -1], [30, 50, 80, "Todas"]]
     });
     view_quick_look();
@@ -18,15 +18,18 @@ $(document).ready(function() {
 function view_quick_look() {
     let rows = document.querySelectorAll(".tr_policy")
 
+    restar()
+
     rows.forEach(r => {
-        r.addEventListener("click", ()=> {
-            console.log(r.getAttribute("class"));
-            if(r.classList.contains("active")){
+        r.addEventListener("click", () => {
+            if (r.classList.contains("active")) {
                 r.classList.remove("active")
-                close_quicks();
-            }else{
                 close_quicks()
-                r.setAttribute("class", r.getAttribute("class") + " active")
+                restar();
+            } else {
+                restar()
+                close_quicks()
+                r.classList.add("active")
                 r.insertAdjacentHTML('afterend', `<tr>
                 <td colspan="10" class="bg-light quicklook">
                     <div class="row p-2">
@@ -58,24 +61,33 @@ function view_quick_look() {
                                 <li><p><strong>Vencimiento:</strong> 11/01/2021</p></li>
                                 <li><p><strong>Instrucciones de pago:</strong> <a href="#">https://qualitas.com/asdasdasd/saasdasd</a></p></li>
                             </ul>
-                            <button class="btn btn-md btn-success">Enviar whatsapp de cobranza</button>
+                            <button class="btn btn-sm btn-success">Enviar whatsapp de cobranza</button>
                         </div>
                     </div>
                 </td>
             </tr>`);
-            } 
-    }) 
-})
+            }
+        })
+    })
 
 }
 
-function close_quicks(){
+function close_quicks() {
     const quicks = document.querySelectorAll(".quicklook")
-    
-    if(quicks){
+
+    if (quicks) {
         quicks.forEach(q => {
-        q.remove()
-        }) 
+            q.remove()
+
+        })
     }
+}
+
+function restar(){
+    let rows = document.querySelectorAll(".tr_policy")
+
+    rows.forEach(r => {
+        r.classList.remove("active")
+    })
 }
 
