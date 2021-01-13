@@ -37,8 +37,8 @@ function view_quick_look() {
                             <h6><strong>Asegurado</strong></h6>
                             <ul class="list-group" style="list-style-type: none;">
                                 <li><p><strong>Nombre:</strong> Victor Flores</p></li>
-                                <li><p><strong>Telefono 1:</strong> 5637847377</p></li>
-                                <li><p><strong>Telefono 2:</strong> 5573728477</p></li>
+                                <li><p><strong>Telefono 1:</strong> <a href="tel:+5573728477">5573728477</a></p></li>
+                                <li><p><strong>Telefono 2:</strong> <a href="tel:+5573728477">5573728477</a></p></li>
                                 <li><p><strong>Email:</strong> vicflores@gmail.com</p></li>
                             </ul>
                         </div>
