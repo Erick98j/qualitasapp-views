@@ -143,7 +143,7 @@
                                 </div>
                                 <div class="p-4">
                                     <div class="datatable table-responsive">
-                                        <table class="table" id="dataTableActivity" width="100%" cellspacing="0">
+                                        <table class="table table-hover" id="dataTableActivity" width="100%" cellspacing="0">
                                             <thead class="text-dark">
                                                 <tr>
                                                     <th>Aseguradora</th>
@@ -159,7 +159,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr class="policy_tr">
+                                                <tr>
                                                     <td class="text-center">
                                                         <img src="dist/assets/img/icons/icon_qualitas.svg" alt="Qualitas" width="30px" height="30px">
                                                     </td>
@@ -180,7 +180,29 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr class="policy_tr">
+                                                <tr class="tr_policy">
+                                                    <td class="text-center">
+                                                        <img src="dist/assets/img/icons/icon_qualitas.svg" alt="Qualitas" width="30px" height="30px">
+                                                    </td>
+                                                    <td>3190273105</td>
+                                                    <td>Victor Manuel Flores</td>
+                                                    <td>TR Kenworth t800</td>
+                                                    <td>23/10/2021</td>
+                                                    <td><h3><span class="badge badge-success badge-pill">Activa</span></h3></td>
+                                                    <td>11/01/2021</td>
+                                                    <td>$18,000.00</td>
+                                                    <td><h3><span class="badge badge-warning badge-pill">Cobrar</span></h3></td>
+                                                    <td style="display: flex; justify-content: space-around;">
+                                                        <button class="btn btn-xs btn-green btn-icon" type="button" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Sincronizada hace un momento"></button>
+                                                        <button class="btn btn-datatable btn-icon btn-transparent-dark mr-2 btn-md" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="more-vertical"></i></button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#!">Sincroizar</a>
+                                                            <a class="dropdown-item" href="#!">Ver póliza</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr class="tr_policy">
                                                     <td class="text-center">
                                                         <img src="dist/assets/img/icons/icon_qualitas.svg" alt="Qualitas" width="30px" height="30px">
                                                     </td>
@@ -202,44 +224,6 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="10" class="bg-light">
-                                                        <div class="row p-2">
-                                                            <div class="col-4" style="padding-left: 70px;">
-                                                                <h6><strong>Asegurado</strong></h6>
-                                                                <ul class="list-group" style="list-style-type: none;">
-                                                                    <li><p><strong>Nombre:</strong> Victor Flores</p></li>
-                                                                    <li><p><strong>Telefono 1:</strong> 5637847377</p></li>
-                                                                    <li><p><strong>Telefono 2:</strong> 5573728477</p></li>
-                                                                    <li><p><strong>Email:</strong> vicflores@gmail.com</p></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-4 border-left border-black" style="padding-left: 20px;">
-                                                                <h6><strong>Póliza</strong> 3190273105</h6>
-                                                                <ul class="list-group" style="list-style-type: none;">
-                                                                    <li><p><strong>Estatus:</strong> <span class="badge badge-success badge-pill" style="font-size: 14px;">Activa</span></p></li>
-                                                                    <li><p><strong>Vehículo:</strong> TR Kenworth t800</p></li>
-                                                                    <li><p><strong>Cobertura:</strong> Amplia</p></li>
-                                                                    <li><p><strong>Periodisidad:</strong> Trimestral</p></li>
-                                                                    <li><p><strong>Vencimiento:</strong> 29/12/2012</p></li>
-                                                                    <li><p><strong>Cantidad total a pagar:</strong> $56,000.00</p></li>
-
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-4 border-left border-black" style="padding-left: 20px;">
-                                                                <h6><strong>Recibo a pagar:</strong> 017497915</h6>
-                                                                <ul class="list-group" style="list-style-type: none;">
-                                                                    <li><p><strong>Estatus:</strong> <span class="badge badge-warning badge-pill" style="font-size: 14px;">Cobrar</span></p></li>
-                                                                    <li><p><strong>Cantidad a pagar:</strong> $18,000.00</p></li>
-                                                                    <li><p><strong>Vencimiento:</strong> 11/01/2021</p></li>
-                                                                    <li><p><strong>Instrucciones de pago:</strong> <a href="#">https://qualitas.com/asdasdasd/saasdasd</a></p></li>
-
-                                                                </ul>
-                                                                <button class="btn btn-success">Enviar whatsapp de cobranza</button>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="policy_tr">
                                                     <td class="text-center">
                                                         <img src="dist/assets/img/icons/icon_qualitas.svg" alt="Qualitas" width="30px" height="30px">
                                                     </td>
@@ -260,28 +244,7 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr class="policy_tr">
-                                                    <td class="text-center">
-                                                        <img src="dist/assets/img/icons/icon_qualitas.svg" alt="Qualitas" width="30px" height="30px">
-                                                    </td>
-                                                    <td>3190273105</td>
-                                                    <td>Victor Manuel Flores</td>
-                                                    <td>TR Kenworth t800</td>
-                                                    <td>23/10/2021</td>
-                                                    <td><h3><span class="badge badge-success badge-pill">Activa</span></h3></td>
-                                                    <td>11/01/2021</td>
-                                                    <td>$18,000.00</td>
-                                                    <td><h3><span class="badge badge-warning badge-pill">Cobrar</span></h3></td>
-                                                    <td style="display: flex; justify-content: space-around;">
-                                                        <button class="btn btn-xs btn-green btn-icon" type="button" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Sincronizada hace un momento"></button>
-                                                        <button class="btn btn-datatable btn-icon btn-transparent-dark mr-2 btn-md" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="more-vertical"></i></button>
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="#!">Sincroizar</a>
-                                                            <a class="dropdown-item" href="#!">Ver póliza</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="policy_tr">
+                                                <tr>
                                                     <td class="text-center">
                                                         <img src="dist/assets/img/icons/icon_qualitas.svg" alt="Qualitas" width="30px" height="30px">
                                                     </td>
