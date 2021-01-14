@@ -42,7 +42,7 @@ function view_quick_look() {
                                 <li><p><strong>Email:</strong> vicflores@gmail.com</p></li>
                             </ul>
                         </div>
-                        <div class="col-4 border-left border-black" style="padding-left: 20px;">
+                        <div class="col-4 border-left border-gray" style="padding-left: 20px;">
                             <h6><strong>Póliza</strong> 3190273105</h6>
                             <ul class="list-group" style="list-style-type: none;">
                                 <li><p><strong>Estatus:</strong> <span class="badge badge-success badge-pill" style="font-size: 14px;">Activa</span></p></li>
@@ -53,7 +53,7 @@ function view_quick_look() {
                                 <li><p><strong>Cantidad total a pagar:</strong> $56,000.00</p></li>
                             </ul>
                         </div>
-                        <div class="col-4 border-left border-black" style="padding-left: 20px;">
+                        <div class="col-4 border-left border-gray" style="padding-left: 20px;">
                             <h6><strong>Recibo a pagar:</strong> 017497915</h6>
                             <ul class="list-group" style="list-style-type: none;">
                                 <li><p><strong>Estatus:</strong> <span class="badge badge-warning badge-pill" style="font-size: 14px;">Cobrar</span></p></li>

@@ -35,85 +35,27 @@
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
-                        <!-- Dropdown - Alerts -->
-                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                            aria-labelledby="alertsDropdown">
-                            <h6 class="dropdown-header">
-                                Alerts Center
-                            </h6>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="mr-3">
-                                    <div class="icon-circle bg-primary">
-                                        <i class="fas fa-file-alt text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">December 12, 2019</div>
-                                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="mr-3">
-                                    <div class="icon-circle bg-success">
-                                        <i class="fas fa-donate text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">December 7, 2019</div>
-                                    $290.29 has been deposited into your account!
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="mr-3">
-                                    <div class="icon-circle bg-warning">
-                                        <i class="fas fa-exclamation-triangle text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">December 2, 2019</div>
-                                    Spending Alert: We've noticed unusually high spending for your account.
-                                </div>
-                            </a>
-                            <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                        </div>
-                        </li>
 
-
-
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><i
-                                        class="bi bi-person-circle"></i></span>
-                                <img class="img-profile rounded-circle" src="dist/asset/img/undraw_profile.svg">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </nav>
+                        <ul class="navbar-nav align-items-center ml-auto">
+                
+                
+                            <!-- User Dropdown-->
+                            <li class="nav-item dropdown no-caret mr-3 mr-lg-0 dropdown-user">
+                                <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-alt"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
+                                    
+                                    <a class="dropdown-item" href="#!">
+                                        <div class="dropdown-item-icon"><i data-feather="settings"></i></div>
+                                        Account
+                                    </a>
+                                    <a class="dropdown-item" href="#!">
+                                        <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -121,7 +63,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4" style="padding-left: 25px; padding-right: 25px;">
-                        <h1 class="mb-0 text-gray-800">Pólizas</h1>
+                        <h1 class="mb-0 text-gray display-3">Pólizas</h1>
                         <button class="btn btn-success">Sincroizar pólizas</button>
                     </div>
 
@@ -144,14 +86,14 @@
                         <div class="col-xxl-3 col-lg-3">
                             <div class="card-counter bg-warning text-white mb-4">
                                 <i class="feather-xl text-white-50" data-feather="file-text"></i>
-                                <span class="count-numbers">5</span>
+                                <span class="count-numbers">0</span>
                                 <span class="count-name">Por renovar</span>
                             </div>
                         </div>
                         <div class="col-xxl-3 col-lg-3">
                             <div class="card-counter danger text-white mb-4">
                                 <i class="feather-xl text-white-50" data-feather="x"></i>
-                                <span class="count-numbers">12</span>
+                                <span class="count-numbers">0</span>
                                 <span class="count-name">Canceladas</span>
                             </div>
                         </div>
@@ -354,6 +296,176 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+                                                <tr class="tr_policy">
+                                                    <td class="text-center">
+                                                        <img src="dist/assets/img/icons/icon_qualitas.svg"
+                                                            alt="Qualitas" width="30px" height="30px">
+                                                    </td>
+                                                    <td>3190273105</td>
+                                                    <td>Victor Manuel Flores</td>
+                                                    <td>TR Kenworth T660 Aerocab Aerodyne Sleeper 62" STD</td>
+                                                    <td>23/10/2021</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-success badge-pill">Activa</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td>11/01/2021</td>
+                                                    <td>$18,000.00</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-warning badge-pill">Cobrar</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td style="display: flex; justify-content: space-around;">
+                                                        <button class="btn btn-xs btn-success btn-icon" type="button"
+                                                            data-toggle="tooltip" data-placement="bottom" title=""
+                                                            data-original-title="Sincronizada hace un momento"></button>
+                                                        <button
+                                                            class="btn btn-datatable btn-icon btn-transparent-dark mr-2 btn-md"
+                                                            id="dropdownMenuButton" type="button" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i
+                                                                data-feather="more-vertical"></i></button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#!">Sincroizar</a>
+                                                            <a class="dropdown-item" href="#!">Ver póliza</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tr_policy">
+                                                    <td class="text-center">
+                                                        <img src="dist/assets/img/icons/icon_qualitas.svg"
+                                                            alt="Qualitas" width="30px" height="30px">
+                                                    </td>
+                                                    <td>3190273105</td>
+                                                    <td>Victor Manuel Flores</td>
+                                                    <td>TR Kenworth t800</td>
+                                                    <td>23/10/2021</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-success badge-pill">Activa</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td>11/01/2021</td>
+                                                    <td>$18,000.00</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-warning badge-pill">Cobrar</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td style="display: flex; justify-content: space-around;">
+                                                        <button class="btn btn-xs btn-success btn-icon" type="button"
+                                                            data-toggle="tooltip" data-placement="bottom" title=""
+                                                            data-original-title="Sincronizada hace un momento"></button>
+                                                        <button
+                                                            class="btn btn-datatable btn-icon btn-transparent-dark mr-2 btn-md"
+                                                            id="dropdownMenuButton" type="button" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i
+                                                                data-feather="more-vertical"></i></button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#!">Sincroizar</a>
+                                                            <a class="dropdown-item" href="#!">Ver póliza</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tr_policy">
+                                                    <td class="text-center">
+                                                        <img src="dist/assets/img/icons/icon_qualitas.svg"
+                                                            alt="Qualitas" width="30px" height="30px">
+                                                    </td>
+                                                    <td>3190273105</td>
+                                                    <td>Victor Manuel Flores</td>
+                                                    <td>TR Kenworth t800</td>
+                                                    <td>23/10/2021</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-success badge-pill">Activa</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td>11/01/2021</td>
+                                                    <td>$18,000.00</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-warning badge-pill">Cobrar</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td style="display: flex; justify-content: space-around;">
+                                                        <button class="btn btn-xs btn-success btn-icon" type="button"
+                                                            data-toggle="tooltip" data-placement="bottom" title=""
+                                                            data-original-title="Sincronizada hace un momento"></button>
+                                                        <button
+                                                            class="btn btn-datatable btn-icon btn-transparent-dark mr-2 btn-md"
+                                                            id="dropdownMenuButton" type="button" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i
+                                                                data-feather="more-vertical"></i></button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#!">Sincroizar</a>
+                                                            <a class="dropdown-item" href="#!">Ver póliza</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tr_policy">
+                                                    <td class="text-center">
+                                                        <img src="dist/assets/img/icons/icon_qualitas.svg"
+                                                            alt="Qualitas" width="30px" height="30px">
+                                                    </td>
+                                                    <td>3190273105</td>
+                                                    <td>Victor Manuel Flores</td>
+                                                    <td>TR Kenworth t800</td>
+                                                    <td>23/10/2021</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-success badge-pill">Activa</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td>11/01/2021</td>
+                                                    <td>$18,000.00</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-warning badge-pill">Cobrar</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td style="display: flex; justify-content: space-around;">
+                                                        <button class="btn btn-xs btn-success btn-icon" type="button"
+                                                            data-toggle="tooltip" data-placement="bottom" title=""
+                                                            data-original-title="Sincronizada hace un momento"></button>
+                                                        <button
+                                                            class="btn btn-datatable btn-icon btn-transparent-dark mr-2 btn-md"
+                                                            id="dropdownMenuButton" type="button" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i
+                                                                data-feather="more-vertical"></i></button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#!">Sincroizar</a>
+                                                            <a class="dropdown-item" href="#!">Ver póliza</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tr_policy">
+                                                    <td class="text-center">
+                                                        <img src="dist/assets/img/icons/icon_qualitas.svg"
+                                                            alt="Qualitas" width="30px" height="30px">
+                                                    </td>
+                                                    <td>3190273105</td>
+                                                    <td>Victor Manuel Flores</td>
+                                                    <td>TR Kenworth t800</td>
+                                                    <td>23/10/2021</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-success badge-pill">Activa</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td>11/01/2021</td>
+                                                    <td>$18,000.00</td>
+                                                    <td>
+                                                        <h3><span class="badge badge-warning badge-pill">Cobrar</span>
+                                                        </h3>
+                                                    </td>
+                                                    <td style="display: flex; justify-content: space-around;">
+                                                        <button class="btn btn-xs btn-success btn-icon" type="button"
+                                                            data-toggle="tooltip" data-placement="bottom" title=""
+                                                            data-original-title="Sincronizada hace un momento"></button>
+                                                        <button
+                                                            class="btn btn-datatable btn-icon btn-transparent-dark mr-2 btn-md"
+                                                            id="dropdownMenuButton" type="button" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i
+                                                                data-feather="more-vertical"></i></button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#!">Sincroizar</a>
+                                                            <a class="dropdown-item" href="#!">Ver póliza</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -368,16 +480,6 @@
 
                 </div>
                 <!-- End of Main Content -->
-
-                <!-- Footer -->
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; Your Website 2020</span>
-                        </div>
-                    </div>
-                </footer>
-                <!-- End of Footer -->
 
             </div>
             <!-- End of Content Wrapper -->
