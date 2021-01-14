@@ -10,7 +10,10 @@ $(document).ready(function () {
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
         },
         "order": [[0, 'desc']],
-        "lengthMenu": [[10, 25, 50, -1], [30, 50, 80, "Todas"]]
+        "lengthMenu": [[10, 25, 50, -1], [30, 50, 80, "Todas"]],
+        "dom": "<'row'<'col-md-6'l><'col-md-6 d-flex justify-self-stretch'f>>" +
+        "<'row'<'col-sm-12'tr>>" +
+        "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>"
     });
     view_quick_look();
 });
@@ -30,7 +33,7 @@ function view_quick_look() {
                 restar()
                 close_quicks()
                 r.classList.add("activeQuick")
-                r.insertAdjacentHTML('afterend', `<tr class="tr_policy animated--fade-in">
+                r.insertAdjacentHTML('afterend', `<tr class="animated--fade-in">
                 <td colspan="10" class="bg-light quicklook">
                     <div class="row p-2">
                         <div class="col-4" style="padding-left: 70px;">
@@ -54,7 +57,7 @@ function view_quick_look() {
                             </ul>
                         </div>
                         <div class="col-4 border-left border-gray" style="padding-left: 20px;">
-                            <h6><strong>Recibo a pagar:</strong> 017497915</h6>
+                            <h6><strong>Recibo a pagar</strong> 017497915</h6>
                             <ul class="list-group" style="list-style-type: none;">
                                 <li><p><strong>Estatus:</strong> <span class="badge badge-warning badge-pill" style="font-size: 14px;">Cobrar</span></p></li>
                                 <li><p><strong>Cantidad a pagar:</strong> $18,000.00</p></li>
