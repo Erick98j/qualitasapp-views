@@ -3058,7 +3058,22 @@ select.form-control:focus::-ms-value {
   padding-left: 0;
 }
 
+label{
+  width: 50%;
+}
+
+.pr {
+  padding-right: 200px;
+}
+
+.dataTables_filter {
+  padding-right: 35px;
+  width: 100%;
+}
+
 .form-control-sm {
+  width: 95% !important;
+
   height: calc(1em + 1rem + 2px);
   padding: 0.5rem 0.75rem;
   font-size: 0.75rem;
