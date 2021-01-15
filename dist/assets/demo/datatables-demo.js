@@ -11,7 +11,7 @@ $(document).ready(function () {
         },
         "order": [[0, 'desc']],
         "lengthMenu": [[10, 25, 50, -1], [30, 50, 80, "Todas"]],
-        "dom": "<'row'<'col-md-3 pr'l><'col-md-9'f>>" +
+        "dom": "<'container row mb-4'<'col-md-3 pr'l><'col-md-9'f>>" +
         "<'row'<'col-sm-12'tr>>" +
         "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>"
     });
