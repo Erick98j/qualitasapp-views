@@ -16,6 +16,7 @@ $(document).ready(function () {
         "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>"
     });
     view_quick_look();
+    
 });
 
 function view_quick_look() {
